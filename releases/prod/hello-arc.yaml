@@ -6,14 +6,14 @@ metadata:
 spec:
   releaseName: hello-arc-prod
   chart:
-    git: https://github.com/TheModin/hello_arc.git
+    git: https://github.com/likamrat/hello_arc.git
     path: charts/hello-arc
     ref: master
   values:
     image:
       repository: liorkamrat/hello-arc
       tag: latest
-    replicaCount: 3
+    replicaCount: 1
     env:
       name: MESSAGE
-      value: Hello from prod!
+      value: Azure Arc enabled K8s GitOps Demo!
